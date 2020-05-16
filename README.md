@@ -1,2 +1,2 @@
-# ASP.NET-Assignment-1
-assignment 1 for ASP.Net course
+# RegistrationSQLServer
+Created for the Registration WebForm app and SQL Server project
