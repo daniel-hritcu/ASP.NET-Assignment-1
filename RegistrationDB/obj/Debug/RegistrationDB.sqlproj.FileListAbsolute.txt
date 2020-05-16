@@ -4,3 +4,9 @@ C:\Users\flordn\source\repos\RegistrationSQLServer\RegistrationDB\bin\Debug\Regi
 C:\Users\flordn\source\repos\RegistrationSQLServer\RegistrationDB\obj\Debug\RegistrationDB.sqlprojAssemblyReference.cache
 C:\Users\flordn\source\repos\RegistrationSQLServer\RegistrationDB\obj\Debug\RegistrationDB.dll
 C:\Users\flordn\source\repos\RegistrationSQLServer\RegistrationDB\obj\Debug\RegistrationDB.pdb
+C:\Users\Alienware\Source\Repos\ASP.NET-Assignment-1\RegistrationDB\bin\Debug\RegistrationDB.dacpac
+C:\Users\Alienware\Source\Repos\ASP.NET-Assignment-1\RegistrationDB\bin\Debug\RegistrationDB.dll
+C:\Users\Alienware\Source\Repos\ASP.NET-Assignment-1\RegistrationDB\bin\Debug\RegistrationDB.pdb
+C:\Users\Alienware\Source\Repos\ASP.NET-Assignment-1\RegistrationDB\obj\Debug\RegistrationDB.sqlprojAssemblyReference.cache
+C:\Users\Alienware\Source\Repos\ASP.NET-Assignment-1\RegistrationDB\obj\Debug\RegistrationDB.dll
+C:\Users\Alienware\Source\Repos\ASP.NET-Assignment-1\RegistrationDB\obj\Debug\RegistrationDB.pdb
