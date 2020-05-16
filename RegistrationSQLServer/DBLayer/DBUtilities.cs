@@ -19,7 +19,7 @@ namespace RegistrationSQLServer.DBLayer
 
         public static int InsertUserInformation(BusinessLayer.UserInformation ui)
         {
-            
+
             int result;
 
             using (SqlConnection cnn = GetSqlConnection())
@@ -28,19 +28,70 @@ namespace RegistrationSQLServer.DBLayer
 
                 using (SqlCommand command = new SqlCommand(sql, cnn))
                 {
-                    using (SqlDataAdapter adapter = new SqlDataAdapter())
-                    {
-                        cnn.Open();
+                    cnn.Open();
 
-                        adapter.InsertCommand = new SqlCommand(sql, cnn);
-
-                        result = adapter.InsertCommand.ExecuteNonQuery();
-                    }
+                    command.CommandType = System.Data.CommandType.Text;
+                    command.CommandText = sql;
+                    result = command.ExecuteNonQuery();
                 }
             }
 
             return result;
- 
+
         }
+
+        public static BusinessLayer.UserInformation SelectUserInformationById(int userId)
+        {
+            BusinessLayer.UserInformation userInformation = new BusinessLayer.UserInformation();
+
+            using (SqlConnection cnn = GetSqlConnection())
+            {
+                String sql = $"Select * From UserInformation Where Id = {userId}";
+
+                using (SqlCommand command = new SqlCommand(sql, cnn))
+                {
+                    cnn.Open();
+
+                    using (SqlDataReader dataReader = command.ExecuteReader())
+                    {
+                        while (dataReader.Read())
+                        {
+                            userInformation.Id = (int)dataReader.GetValue(0);
+                            userInformation.FirstName = (string)dataReader.GetValue(1);
+                            userInformation.LastName = (string)dataReader.GetValue(2);
+                            userInformation.Address = (string)dataReader.GetValue(3);
+                            userInformation.City = (string)dataReader.GetValue(4);
+                            userInformation.Province = (string)dataReader.GetValue(5);
+                            userInformation.PostalCode = (string)dataReader.GetValue(6);
+                            userInformation.Country = (string)dataReader.GetValue(7);
+                        }
+                    }
+                }
+            }
+
+            return userInformation;
+        }
+
+        public static int UpdateUserInformationById(int userId, BusinessLayer.UserInformation ui)
+        {
+            int result;
+
+            using (SqlConnection cnn = GetSqlConnection())
+            {
+                String sql = $"Update UserInformation Set FirstName='{ui.FirstName}',LastName='{ui.LastName}',Address='{ui.Address}',City='{ui.City}',Province='{ui.Province}',PostalCode='{ui.PostalCode}',Country='{ui.Country}' Where Id = {userId}";
+
+                using (SqlCommand command = new SqlCommand(sql, cnn))
+                {
+                    cnn.Open();
+
+                    command.CommandType = System.Data.CommandType.Text;
+                    command.CommandText = sql;
+                    result = command.ExecuteNonQuery();
+                }
+            }
+
+            return result;
+        }
+
     }
 }
