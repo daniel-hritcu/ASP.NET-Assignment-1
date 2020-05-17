@@ -24,7 +24,7 @@ namespace RegistrationSQLServer.DBLayer
 
             using (SqlConnection cnn = GetSqlConnection())
             {
-                String sql = $"Insert into UserInformation(FirstName,LastName,Address,City,Province,PostalCode,Country) values ('{ui.FirstName}','{ui.LastName}','{ui.Address}','{ui.City}','{ui.Province}','{ui.PostalCode}','{ui.Country}')";
+                String sql = $"Insert into UserInformation(FirstName,LastName,Address,City,Province,PostalCode,Country) OUTPUT INSERTED.ID values ('{ui.FirstName}','{ui.LastName}','{ui.Address}','{ui.City}','{ui.Province}','{ui.PostalCode}','{ui.Country}')";
 
                 using (SqlCommand command = new SqlCommand(sql, cnn))
                 {
@@ -32,7 +32,7 @@ namespace RegistrationSQLServer.DBLayer
 
                     command.CommandType = System.Data.CommandType.Text;
                     command.CommandText = sql;
-                    result = command.ExecuteNonQuery();
+                    result = (int)command.ExecuteScalar();
                 }
             }
 
