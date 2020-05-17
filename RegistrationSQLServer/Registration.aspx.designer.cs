@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RegistrationSQLServer {
-    
-    
-    public partial class Registration {
-        
+namespace RegistrationSQLServer
+{
+
+
+    public partial class Registration
+    {
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// enterUserInfoPanel control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel enterUserInfoPanel;
-        
+
         /// <summary>
         /// firstNameTextBox control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox firstNameTextBox;
-        
+
         /// <summary>
         /// firstNameTextBoxValidator control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator firstNameTextBoxValidator;
-        
+
         /// <summary>
         /// lastNameTextBox control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox lastNameTextBox;
-        
+
         /// <summary>
         /// lastNameTextBoxValidator control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator lastNameTextBoxValidator;
-        
+
         /// <summary>
         /// addressTextBox control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox addressTextBox;
-        
+
         /// <summary>
         /// RequiredFieldValidator1 control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
-        
+
         /// <summary>
         /// cityTextBox control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox cityTextBox;
-        
+
         /// <summary>
         /// RequiredFieldValidator2 control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
-        
+
         /// <summary>
         /// stateOrProvinceTextBox control.
         /// </summary>
@@ -110,7 +112,7 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox stateOrProvinceTextBox;
-        
+
         /// <summary>
         /// RequiredFieldValidator3 control.
         /// </summary>
@@ -119,7 +121,7 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
-        
+
         /// <summary>
         /// provinceValidator control.
         /// </summary>
@@ -128,7 +130,7 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator provinceValidator;
-        
+
         /// <summary>
         /// zipCodeTextBox control.
         /// </summary>
@@ -137,7 +139,7 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox zipCodeTextBox;
-        
+
         /// <summary>
         /// RequiredFieldValidator4 control.
         /// </summary>
@@ -146,7 +148,7 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
-        
+
         /// <summary>
         /// countryTextBox control.
         /// </summary>
@@ -155,7 +157,7 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox countryTextBox;
-        
+
         /// <summary>
         /// RequiredFieldValidator5 control.
         /// </summary>
@@ -164,7 +166,7 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
-        
+
         /// <summary>
         /// enterInfoButton control.
         /// </summary>
@@ -173,7 +175,16 @@ namespace RegistrationSQLServer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button enterInfoButton;
-        
+
+        /// <summary>
+        /// editUserLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink editUserLink;
+
         /// <summary>
         /// lblResultMessage control.
         /// </summary>

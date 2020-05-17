@@ -81,7 +81,10 @@
                             <asp:Button ID="enterInfoButton" runat="server" Text="Enter user information" OnClick="EnterInfoButton_OnClick" /></td>
                     </tr>
                 </table>
-
+                <br />
+                <asp:HyperLink Visible="false" ID="editUserLink" NavigateUrl="~/EditUserInformationById.aspx?id=" Text="Edit User Page" runat="server"/>
+                <br />
+                <br />
                 <asp:Label ID="lblResultMessage" ForeColor="Red" runat="server"></asp:Label>
             </asp:Panel>
         </div>

@@ -29,10 +29,20 @@ namespace RegistrationSQLServer
                 userInfo.PostalCode = Server.HtmlEncode(zipCodeTextBox.Text);
                 userInfo.Country = Server.HtmlEncode(countryTextBox.Text);
 
-                if (DBLayer.DBUtilities.InsertUserInformation(userInfo) == 1)
+                int userId = DBLayer.DBUtilities.InsertUserInformation(userInfo);
+
+                if (userId != 0)
+                {
                     this.lblResultMessage.Text = "The User Information was successfully inserted into db table";
+                    //Make EditUser link visible
+                    this.editUserLink.Visible = true;
+                    //Pass user Id to editUserLink
+                    this.editUserLink.NavigateUrl += userId;
+                }
                 else
+                {
                     this.lblResultMessage.Text = "There was an error on inserting the user information!!!!!!";
+                }   
             }
         }
     }
